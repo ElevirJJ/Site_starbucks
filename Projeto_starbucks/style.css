@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    width: 80px;
+    margin: 3% 0;
+}
+
+.descricao {
+    display: none;
+}
+
+.descricao.ativo {
+    display: block;
+}
+
+
+.assunto p {
+    width: 50%;
+    word-wrap: break-word;
+    margin-left: 0rem;
+    margin-top: 2rem;
+}
+
+.assunto span {
+    color: #017143;
+}
+
+.btn {
+    margin-top: 2%;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: #017143;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    opacity: 0.6;
+    background-color: rgb(118, 180, 26);
+}
+
+.imgs {
+    position: absolute;
+    left: 60%;
+    top: 13%;
+}
+
+.imgs img {
+    width: 300px;
+}
+
+.assunto {
+    position: absolute;
+    top: 30%;
+    padding: 10px;
+}
+
+.circulo {
+    background: #017143;
+    height: 100vh;
+    clip-path: circle();
+    margin-left: 50%;
+    margin-top: -13%;
+    transition: background-color 0.5s ease;
+}
+
+.setas {
+    position: absolute;
+    left: 17rem;
+    top: 30rem;
+    cursor: pointer;
+}
+
+.setas img {
+    width: 70px;
+    transition: all 0.1s;
+}
+
+.setas img:hover {
+    transform: translateY(-20px);
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 884px) {
+    .imgs {
+        position: absolute;
+        left: 60%;
+        top: 35%;
+    }
+
+    .imgs img {
+        width: 250px;
+    }
+
+    .setas {
+        position: absolute;
+        left: 10rem;
+        top: 40rem;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+    .imgs {
+        position: absolute;
+        left: 60%;
+        top: 40%;
+    }
+
+    .imgs img {
+        width: 220px;
+    }
+
+    .setas {
+        position: absolute;
+        left: 10rem;
+        top: 45rem;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .imgs {
+        position: absolute;
+        left: 60%;
+        top: 43%;
+    }
+
+    .imgs img {
+        width: 180px;
+    }
+
+    .setas {
+        position: absolute;
+        left: 10rem;
+        top: 50rem;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .imgs {
+        position: absolute;
+        left: 62%;
+        top: 47%;
+    }
+
+    .imgs img {
+        width: 140px;
+    }
+
+    .assunto {
+        position: absolute;
+        top: 30%;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .assunto p {
+        width: 50%;
+        word-wrap: break-word;
+        margin-left: 0rem;
+        margin-top: 2rem;
+        font-size: 14px;
+    }
+
+    .setas {
+        position: absolute;
+        left: 10rem;
+        top: 50rem;
+        cursor: pointer;
+    }
+
+    .setas img {
+        width: 50px;
+        transition: all 0.1s;
+    }
+}
+
+@media screen and (max-width: 429px) {
+    .imgs {
+        position: absolute;
+        left: 34%;
+        top: 47%;
+    }
+
+    .imgs img {
+        width: 140px;
+    }
+
+    .circulo {
+        background: #017143;
+        height: 100vh; 
+        width: 100vw; 
+        clip-path: none; 
+        position: absolute; 
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0; 
+        padding: 0; 
+        z-index: -1; 
+    }
+
+    .assunto {
+        position: absolute;
+        top: 15%;
+        padding: 8px;
+        font-size: 18px;
+    }
+
+    .assunto p {
+        width: 90%;
+        word-wrap: break-word;
+        margin-left: 0rem;
+        margin-top: 2rem;
+        font-size: 13px;
+        margin-top: -0%;
+    }
+
+    .assunto span {
+        color: #0cc679;
+    }
+
+    .setas {
+        position: absolute;
+        left: 9rem;
+        top: 37rem;
+        cursor: pointer;
+    }
+
+    .setas img {
+        width: 40px;
+        transition: all 0.1s;
+    }
+}
+
+@media screen and (max-width: 393px) {
+    .imgs {
+        position: absolute;
+        left: 34%;
+        top: 55%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .imgs {
+        position: absolute;
+        left: 34%;
+        top: 55%;
+    }
+
+    .imgs img {
+        width: 130px;
+    }
+
+    .setas {
+        position: absolute;
+        left: 9rem;
+        top: 35rem;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .setas {
+        position: absolute;
+        left: 8rem;
+        top: 38rem;
+        cursor: pointer;
+    }
+}
